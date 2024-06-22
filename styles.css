@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 *{
-    font-family: "Playwrite AU VIC", cursive;
+    font-family: "Quicksand";
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
@@ -11,28 +11,85 @@
 
 html,body{
     box-sizing: border-box;
-    background-color: #dfdfdf;
 }
 
 .nav-bar{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(30, 29, 29);
-    color: #dfdfdf;
+    background-color: #dfdfdf;
+    color: #111;
+}
+
+.nav-title h1 img{
+    width: 20%;
+    height: 80%;
 }
 
 .nav-title h1{
     font-size: 2.2vw;
     margin: 2vw 0 0 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #search{
     margin: 2vw;
+    display: flex;
+    justify-content: center;
 }
+
+
 #search label{
-    margin-right: 1vw;
+    font-size: 1.4vw;
 }
+
 #search input{
-    padding: 0.2vw 0.2vw;
+    width: 30vw;    
+    padding: 0.15vw 0.4vw;
+    outline: none;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 2.5px;
+    margin: 0 1vw;
+}
+.btn{
+    font-size: 1;
+    padding: 0.15vw;
+    border-radius: 2.5px;
+    border: none;
+    cursor: pointer;
+}
+
+.photos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dfdfdf;
+    justify-content: center;
+
+}
+
+.col{
+    margin: 2vw;
+    display: flex;
+    align-items: center;
+}
+.col .img{
+    text-align: center;
+    background-color:aliceblue;
+    margin-right: 2vw;
+    padding-top: 1.9vw;
+    padding-bottom: 5vw;
+    border-radius: 8px;
+}
+.col .img:nth-last-child(1){
+    margin-right: 0;
+}
+.col img{
+    width: 85%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
 }
